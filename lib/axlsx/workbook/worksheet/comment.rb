@@ -12,7 +12,7 @@ module Axlsx
     # @option [String] author the author of the comment
     # @option [String] text The text for the comment
     # @option [String] ref The refence (e.g. 'A3' where this comment will be anchored.
-    # @option [Boolean] visible This controls the visiblity of the associated vml_shape.
+    # @option [Boolean] visible This controls the visibility of the associated vml_shape.
     def initialize(comments, options={})
       raise ArgumentError, "A comment needs a parent comments object" unless comments.is_a?(Comments)
       @visible = true
